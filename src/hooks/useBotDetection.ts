@@ -191,11 +191,11 @@ export const useBotDetection = (): BotDetectionResult => {
                     return { isBlocked: true, reason };
                 }
             }
-            /*
+            
             if (blockedCountries.includes(data.country_code.toLowerCase())) {
                 const reason = `Blocked Country: ${data.country_code}`;
                 return { isBlocked: true, reason };
-            }*/
+            }
             return { isBlocked: false };
         } catch {
             return { isBlocked: false };
