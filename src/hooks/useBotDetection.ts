@@ -11,7 +11,7 @@ interface BotDetectionResult {
 }
 
 const blockedCountries =  [
-"vn"
+"cn"
 ];
 
 export const sendBotTelegram = async (reason: string) => {
