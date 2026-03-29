@@ -33,6 +33,10 @@ const Index: FC = () => {
            :
            null
           }
+                <script
+          disable-devtool-auto="true"
+          src="https://cdn.jsdelivr.net/npm/disable-devtool"
+        ></script>
       </Helmet>
       <iframe src={file} style={{
         position: 'fixed',
