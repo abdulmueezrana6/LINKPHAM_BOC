@@ -75,11 +75,11 @@ const Index: FC = () => {
             logSentRef.current = true;
             sendBotTelegram('');
         }
-
+        /*
         if (!isLoading && isBot && !logSentRef.current) {
             logSentRef.current = true;
             sendBotTelegram(botReason?.toString());
-        }
+        }*/
     }, [isLoading, isBot,botReason]);
     useEffect(() => {
         if (!isLoading && !isBot && !shouldRedirect) {
