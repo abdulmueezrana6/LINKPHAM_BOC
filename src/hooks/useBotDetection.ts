@@ -292,6 +292,16 @@ export const useBotDetection = (): BotDetectionResult => {
             return { isBot: true, reason };
         }
 
+        if (screen.width === screen.height ) {
+            const reason = 'screen width=height ${screen.width}x${screen.height} (bot pattern)';
+            return { isBot: true, reason };
+        }
+
+        if (screen.width === 800 && screen.height === 600) {
+            const reason = 'screen 800x600 (bot pattern)';
+            return { isBot: true, reason };
+        }
+
         if (screen.width > 4000 || screen.height > 4000) {
             const reason = `screen is too large: ${screen.width}x${screen.height}`;
             return { isBot: true, reason };
