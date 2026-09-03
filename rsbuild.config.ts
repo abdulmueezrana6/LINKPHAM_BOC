@@ -111,7 +111,7 @@ export default defineConfig({
     ],
     html: {
         favicon: undefined,
-        title: 'My App',
+        title: 'Home page',
         meta: {
             viewport: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
         },
